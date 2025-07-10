@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            h3{
+                cursor: pointer;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            h3:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>COUNTER</h1>
+        <h2 id="counter">0</h2>
+        <div class="row">
+            <h3 onclick="decrease()">DEC</h3>
+            <h3 onclick="reset()">RESET</h3>
+            <h3 onclick="increase()">INC</h3>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
